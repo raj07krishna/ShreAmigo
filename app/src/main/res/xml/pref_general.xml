@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ShreAmigoCuisinePreference-->
+
+        <!--android:key="cuisine_choice"-->
+        <!--android:summary="@string/select_cuisine_preference"-->
+        <!--android:title="@string/cuisine_preference"-->
+        <!--android:positiveButtonText="Add New Cuisines"-->
+        <!--android:negativeButtonText="@android:string/cancel"/>-->
+
+    <Preference
+        android:key="cuisine_activity"
+        android:summary="@string/select_cuisine_preference"
+        android:title="@string/cuisine_preference"/>
+
+</PreferenceScreen>

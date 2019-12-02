@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "586331068521",
+    "firebase_url": "https://shreamigo.firebaseio.com",
+    "project_id": "shreamigo",
+    "storage_bucket": "shreamigo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586331068521:android:7df0d31444c32735",
+        "android_client_info": {
+          "package_name": "scenica.raj.shreamigo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586331068521-or80cgt20goahcc2dro03pu8t5dvlfir.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "scenica.raj.shreamigo",
+            "certificate_hash": "1f8751da2bb1d34f7100d8f575504b608e366224"
+          }
+        },
+        {
+          "client_id": "586331068521-befodotm6jbpjso3eqqlqps7qmhnnqle.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeowj7aZYn4nhmwRnTc8wfKiVu1f01TrU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586331068521-befodotm6jbpjso3eqqlqps7qmhnnqle.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

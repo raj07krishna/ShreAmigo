@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="scenica.raj.shreamigo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="scenica.raj.shreamigo.MainActivity"
+            android:label="Restaurant List"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="scenica.raj.shreamigo.CuisinesList"
+            android:label="Cuisine List"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <service android:name="scenica.raj.shreamigo.GeofenceTransitionsIntentService" />
+        <service android:name="scenica.raj.shreamigo.CityGeofenceTransitionsIntentService" />
+        <service android:name="scenica.raj.shreamigo.RestaurantGeofenceService" />
+        <service android:name="scenica.raj.shreamigo.GPSService" />
+
+        <activity
+            android:name="scenica.raj.shreamigo.ResultByCuisine"
+            android:label="Your Cuisine"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="scenica.raj.shreamigo.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="scenica.raj.shreamigo.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="scenica.raj.shreamigo.MainActivity" />
+        </activity>
+        <activity
+            android:name="scenica.raj.shreamigo.GoogleSignInActivity"
+            android:label="Sign in"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="scenica.raj.shreamigo.RestaurantDetails"
+            android:label="Restaurant Details"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="scenica.raj.shreamigo.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

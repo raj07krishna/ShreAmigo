@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_resultbycuisine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    tools:context="scenica.raj.shreamigo.ResultByCuisine"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar_resultbycuisine"
+        layout="@layout/tool_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <ImageView
+        android:id="@+id/zomato_widget_resultbbycuisine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/zomato_widget" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/user_cuisine_cardList_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/zomato_widget_resultbbycuisine"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:elevation="5dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/user_cuisine_empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <!-- Loading indicator is only shown before the first load -->
+    <ProgressBar
+        android:id="@+id/user_cuisine_loading_indicator"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/user_cuisine_empty_view"
+        android:layout_toStartOf="@id/user_cuisine_empty_view"
+        android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>
